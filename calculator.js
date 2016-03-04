@@ -31,5 +31,5 @@ var handleClick = function(){
 
 	} 
 	document.write("The answer is "+ answer + " boo.");
-	
+
 }
