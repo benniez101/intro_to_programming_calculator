@@ -1,9 +1,12 @@
 <html>
 	<head>
 	<title>Calculator</title>
+	<link rel="stylesheet" href="calculator.css"
 	</head>
 <body bgcolor="purple">
+<font color ="#ff33cc">
 
+<div>
     <input id="firstNum" placeholder="First Number" type="number"/>
 	<input id="secondNum" placeholder="Second Number" type="number"/>
 	
@@ -12,7 +15,11 @@
 	<button id="multiplication" onclick="handleClick()" style="background-color:#ff33cc"> * </button>
 	<button id="division" onclick="handleClick()" style="background-color:#ff33cc"> / </button>
 
+</div>
+<br>
+	<span id="answers"></span>
 
 	<script src="calculator.js"></script>
+</font>
 </body>
 </html>

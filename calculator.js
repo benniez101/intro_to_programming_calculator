@@ -16,20 +16,26 @@ var handleClick = function(){
 	var number2 = document.getElementById("secondNum").value;
 	var parsednumber1 = parseFloat (number1);
 	var parsednumber2 = parseFloat (number2);
+	var operation
 
 	if (choice == "addition"){
+		operation = " + ";
 		var answer = parsednumber1 + parsednumber2;
 
 	} else if(choice == "subtraction"){
 		var answer = parsednumber1 - parsednumber2;
-	
+		operation = " - ";
+
 	} else if(choice == "multiplication"){
 		var answer = parsednumber1 * parsednumber2;
-		
+		operation = " * ";
+
 	} else if(choice == "division"){
 		var answer = parsednumber1 / parsednumber2;
+		operation = " / ";
+	}
 
-	} 
-	document.write("The answer is "+ answer + " boo.");
+	var answerAres = document.getElementById("answers");
+	answerAres.innerHTML = number1 + operation + number2 + " = " + answer;
 
 }
